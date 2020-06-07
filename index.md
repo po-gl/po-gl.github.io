@@ -1,5 +1,6 @@
 ---
 title: Home
+header-title: About
 layout: page
 ---
 
