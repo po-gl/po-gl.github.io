@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Porter Glines
 header-title: About
 layout: page
 ---
