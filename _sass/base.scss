@@ -66,7 +66,16 @@ footer { margin-bottom: 20px; }
 .menu ul { margin-top: 12px;  margin-bottom: 12px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
 .menu ul li { display: inline;  margin-left: 10px; }
 .menu ul li a { text-decoration: none;  color: var(--text-color);  padding-left: 3px;  padding-right: 3px }
-.menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
+
+.menu-item-0 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-6); }
+.menu-item-1 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-14); }
+.menu-item-2 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-7); }
+.menu-item-3 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-9); }
+.menu-item-4 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-5); }
+.menu-item-5 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-6); }
+.menu-item-6 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-14); }
+
+
 
 /**
  * Form
