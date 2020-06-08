@@ -56,7 +56,7 @@ footer { margin-bottom: 20px; }
  * Header/Navigation
  */
 .menu { display: flex;  justify-content: space-between;  align-items: center;  border-top: var(--border);  border-bottom: var(--border);  margin-bottom: 25px;}
-.menu-title { display: flex;  align-items: center; }
+.menu-title { display: flex;  align-items: center;  cursor: pointer; }
 
 .menu img { width: 20px;  height: 20px;  padding-right: 10px; }
 
