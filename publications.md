@@ -5,9 +5,11 @@ permalink: /papers/
 layout: page
 ---
 
-Glines, P., Biggs, & B. Bodily, P. M. (in press). A Leap of Creativity: From Systems that Generalize to Systems that Filter. *Proceedings of the 11th International Conference on Computational Creativity*
+Glines, P., Griffith, I., & Bodily, P. M. (2021). Software Design Patterns of Computational Creativity: a Systematic Mapping Study. *Proceedings of the 12th International Conference on Computational Creativity*, pages 218-221.
 
-Glines, P., Biggs, & B. Bodily, P. M. (in press). Probabilistic Generation of Sequences Under Constraints.
-*Proceedings of the 1st Intermountain Engineering, Technology, and Computing Conference*
+Glines, P., Biggs, B., & Bodily, P. M. (2020). A Leap of Creativity: From Systems that Generalize to Systems that Filter. *Proceedings of the 11th International Conference on Computational Creativity*, pages 297-302.
 
-Bodily, P. M., Glines, P., & Biggs, B. (2019). "She Offered No Argument": Constrained Probabilistic Modeling for Mnemonic Device Generation. *Proceedings of the 10th International Conference on Computational Creativity*, 81-88.
+Glines, P., Biggs, B., & Bodily, P. M. (2020). Probabilistic Generation of Sequences Under Constraints.
+*Proceedings of the 1st Intermountain Engineering, Technology, and Computing Conference*, pages 135-140.
+
+Bodily, P. M., Glines, P., & Biggs, B. (2019). "She Offered No Argument": Constrained Probabilistic Modeling for Mnemonic Device Generation. *Proceedings of the 10th International Conference on Computational Creativity*, pages 81-88.
