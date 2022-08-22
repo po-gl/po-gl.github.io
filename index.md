@@ -12,4 +12,4 @@ When I'm not in front of a computer, you can find me in the mountains snowboardi
 
 <br>
 
-You can find more details in my [resume]({% link /assets/Porter_Glines_Resume.pdf %}) or you can [contact]({% link contact.md %}) me for any questions.
+You can find more details in my [resume]({% link /assets/Resume.pdf %}) or you can [contact]({% link contact.md %}) me for any questions.
