@@ -5,6 +5,8 @@ permalink: /papers/
 layout: page
 ---
 
+Glines, P. (2022). [Imposing Structure on Generated Sequences: Constrained Hidden Markov Processes]({% link /assets/Glines_Porter_MS.pdf %}) (Master's thesis, Idaho State University).
+
 Glines, P., Griffith, I., & Bodily, P. M. (2021). Software Design Patterns of Computational Creativity: a Systematic Mapping Study. *Proceedings of the 12th International Conference on Computational Creativity*, pages 218-221.
 
 Glines, P., Biggs, B., & Bodily, P. M. (2020). A Leap of Creativity: From Systems that Generalize to Systems that Filter. *Proceedings of the 11th International Conference on Computational Creativity*, pages 297-302.
