@@ -116,12 +116,15 @@ footer { position: absolute; bottom: 0; width: 100%; height: 2.0rem; margin-bott
 .content-title h2 { font-family: $title-font-family; font-size: $title-h2-font-size; margin-top: 0px; line-height: 1.0; font-weight: normal; }
 .content-title h1 { font-family: $title-font-family; font-size: $title-h1-font-size; margin-top: 0px; line-height: 1.0; font-weight: 600; font-style: italic;}
 @include media-query($on-laptop) { .content-title h2 { font-size: $palm-title-font-size; } }
-@include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-font-size; margin-bottom: 25px; } }
+@include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-font-size; margin-bottom: 5px; } }
+
+.mobile-socials { display: none; }
+@include media-query($on-laptop) { .mobile-socials { display: inherit; text-align: right; margin-bottom: 25px;}}
 
 /**
  * footer
  */
-.socials-wrapper { text-align: right; }
+.footer-socials-wrapper { text-align: right; }
 .social-media-list li { font-family: $footer-font-family; display: inline; }
 .social-media-list li a { text-decoration: none; }
 .social-media-list-first::before { content: "" !important; padding-inline: 0px; }
