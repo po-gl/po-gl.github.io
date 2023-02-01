@@ -8,24 +8,24 @@
 
   <body>
     <div class="container">
-
+  
       {%- include header.html -%}
-    <div class="content-wrapper">
-      <main class="content">
-        <div class="content-title">
-          <h2>Hello, I'm</h2>
-          <h1>{{ site.title }}.</h1>
-        </div>
-        <div class="mobile-socials">
-          {%- include social.html -%}
-        </div>
-        {{ content }}
-      </main>
+      <div class="content-wrapper">
+        <main class="content">
+          <div class="content-title">
+            <h2>Hello, I'm</h2>
+            <h1>{{ site.title }}.</h1>
+          </div>
+          <div class="mobile-socials">
+            {%- include social.html -%}
+          </div>
+          {{ content }}
+        </main>
+      </div>
+  
+      {%- include footer.html -%}
+  
+      <img class="bg-colors" src="/assets/colors.png">
     </div>
-
-    {%- include footer.html -%}
-
-    </div>
-    <img class="bg-colors" src="/assets/colors.png">
   </body>
 </html>
