@@ -1,21 +1,45 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
 
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
+$base-font-family:     'Didot', !default;
+$title-font-family:    'Baskerville', !default;
+$header-font-family:   'Andale mono', !default;
+$footer-font-family:   'Andale mono', !default;
+
+$base-font-size:       18px !default;
+$header-font-size:     16px !default;
 $mobile-font-size:     12px !default;
+$title-h1-font-size:   7vw !default;
+$title-h2-font-size:   5vw !default;
+$palm-title-font-size: 30px !default;
+
 $base-line-height:     1.5 !default;
-$title-font-size:      22px !default;
 $container-width:      90% !default;
-$container-max-width:  600px !default;
+$container-max-width:  1900px !default;
+
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
 
 /**
  * Global
  */
-body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
+body { background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
@@ -32,12 +56,13 @@ h6:before { content: "######";  margin-right: 9px; }*/
 /**
  * Layout
  */
-.container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
+.container { width: $container-width;  max-width: $container-max-width; margin-right: auto;  margin-left: auto; position: relative; min-height: 100vh; }
+.content-wrapper { padding-bottom: 6.0rem; }
 p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; margin-bottom: 20px; }
-footer { color: var(--text-color);  border-top: var(--border);  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
-header { margin-top: 25px;  margin-bottom: 10px; }
+footer { color: var(--text-color);  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
+header { padding-top: 15px; }
 header p { text-align: left;  margin: 0; }
-footer { margin-bottom: 20px; }
+footer { position: absolute; bottom: 0; width: 100%; height: 2.0rem; margin-bottom: 3.0rem; margin-top: 1.0rem }
 
 /**
  * Highlight/Markup
@@ -46,25 +71,27 @@ footer { margin-bottom: 20px; }
 ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
 
 /**
+ * Background
+ */
+.bg-colors { width: 100vw; height: auto; position: fixed; bottom: 0; left: 0; z-index: -1; }
+
+/**
  * Lists
  */
-:not(.menu) > ul { list-style: none;  padding-left: 0; }
-:not(.menu) > ul { list-style-type: none; }
-:not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+// :not(.menu) > ul { list-style: none;  padding-left: 0; }
+// :not(.menu) > ul { list-style-type: none; }
+// :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
 
 /**
  * Header/Navigation
  */
-.menu { display: flex;  justify-content: space-between;  align-items: center;  border-top: var(--border);  border-bottom: var(--border);  margin-bottom: 25px;}
-.menu-title { display: flex;  align-items: center;  cursor: pointer; }
+.menu { text-align: right;  border-bottom: var(--border); }
 
-.menu img { width: 20px;  height: 20px;  padding-right: 10px; }
+.menu-image img { width: 20px; height: 20px; padding: 10px; position: absolute; left: -35px; top: 5px; cursor: pointer; }
+@include media-query($on-laptop) { .menu-image img { width: 18px; height: 18px; left: -10px; top: 8px; }}
 
-.menu h1 { margin-top: 12px; margin-bottom: 12px; font-size: $title-font-size;}
-.menu h1 a { text-decoration: none;  padding-left: 3px;  padding-right: 3px }
-
-.menu ul { margin-top: 12px;  margin-bottom: 12px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
-.menu ul li { display: inline;  margin-left: 10px; }
+.menu ul { margin-top: 0px;  margin-bottom: 0px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
+.menu ul li { font-size: $header-font-size; font-family: $header-font-family; display: inline;  margin-left: 40px; }
 .menu ul li a { text-decoration: none;  color: var(--text-color);  padding-left: 3px;  padding-right: 3px }
 
 .menu-item-0 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-6); }
@@ -75,7 +102,28 @@ footer { margin-bottom: 20px; }
 .menu-item-5 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-6); }
 .menu-item-6 a:hover { text-decoration: none; color: var(--background-color); background-color: var(--code-color-14); }
 
+/**
+ * main content
+ */
+.content { border-left: var(--border); max-width: 350px; padding-top: 25px; padding-left: 25px; }
+@include media-query($on-laptop) { .content { max-width: $container-max-width; } }
 
+.content-title { position: absolute; right: 0; top: 22vh; }
+@include media-query($on-laptop) { .content-title { position: inherit; } }
+
+.content-title h2 { font-family: $title-font-family; font-size: $title-h2-font-size; margin-top: 0px; line-height: 1.0; font-weight: normal; }
+.content-title h1 { font-family: $title-font-family; font-size: $title-h1-font-size; margin-top: 0px; line-height: 1.0; font-weight: 600; font-style: italic;}
+@include media-query($on-laptop) { .content-title h2 { font-size: $palm-title-font-size; } }
+@include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-font-size; margin-bottom: 25px; } }
+
+/**
+ * footer
+ */
+.socials-wrapper { text-align: right; }
+.social-media-list li { font-family: $footer-font-family; display: inline; }
+.social-media-list li a { text-decoration: none; }
+.social-media-list-first::before { content: "" !important; padding-inline: 0px; }
+.social-media-list li::before { content: "|"; padding-inline: 5px; }
 
 /**
  * Form

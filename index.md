@@ -4,7 +4,7 @@ header-title: About
 layout: page
 ---
 
-Hello, I'm a software developer, graduate student, and CS research assistant at Idaho State University. I subscribe to the idea of treating code as a craft.
+I'm a software developer, graduate student, and CS research assistant at Idaho State University. I subscribe to the idea of treating code as a craft.
 
 I have been an author for four published research [papers]({% link publications.md %}). The topic of the research is constrained models for sequence generation and falls into the field of computational creativity and intelligence.
 
