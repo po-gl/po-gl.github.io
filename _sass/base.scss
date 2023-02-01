@@ -39,7 +39,7 @@ $on-laptop:        800px !default;
 /**
  * Global
  */
-body { background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
+body { overflow-x: hidden; background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
@@ -119,8 +119,8 @@ footer { position: absolute; bottom: 0; width: 100%; height: 2.0rem; margin-bott
 @include media-query($on-laptop) { .content-title h2 { font-size: $palm-title-font-size; } }
 @include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-font-size; margin-bottom: 5px; } }
 
-.colors { width: 30vw; height: calc(30vw*0.66); rotate: 160deg; position: absolute; right: -7vw; top: 30vh; z-index: -1;}
-@include media-query($on-laptop) { .colors { width: 16rem; height: calc(16rem*0.66); rotate: 160deg; position: absolute; right: calc(-16rem/12); top: calc(16rem/6); }}
+.colors { width: 30vw; height: calc(30vw*0.66); position: absolute; right: -7vw; top: 30vh; z-index: -1;}
+@include media-query($on-laptop) { .colors { width: 16rem; height: calc(16rem*0.66); position: absolute; right: calc(-16rem/12); top: calc(16rem/6); }}
 
 .mobile-socials { display: none; }
 @include media-query($on-laptop) { .mobile-socials { display: inherit; text-align: right; margin-bottom: 25px;}}
