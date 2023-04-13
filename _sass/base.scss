@@ -122,8 +122,8 @@ footer { position: absolute; bottom: 0; width: 100%; height: 2.0rem; margin-bott
 
 .content-title h2 { font-family: $title-font-family; font-size: $title-h2-font-size; margin-top: 0px; line-height: 1.0; font-weight: lighter; }
 .content-title h1 { font-family: $title-font-family; font-size: $title-h1-font-size; margin-top: 5px; line-height: 1.0; font-weight: 700; font-style: italic;}
-@include media-query($on-laptop) { .content-title h2 { font-size: $palm-title-h2-font-size; font-weight: lighter;} }
-@include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-h1-font-size; margin-top: 5px; margin-bottom: 5px; } }
+@include media-query($on-laptop) { .content-title h2 { font-size: $palm-title-h2-font-size; margin-bottom: 0.3rem; font-weight: lighter;} }
+@include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-h1-font-size; margin-bottom: 1.2rem; } }
 
 .colors { width: 30vw; height: calc(30vw*0.66); position: absolute; right: -7vw; top: 25vh; z-index: -1;}
 @include media-query($on-laptop) { .colors { width: 16rem; height: calc(16rem*0.66); position: absolute; right: calc(-16rem/14); top: calc(16rem/4); }}
@@ -135,10 +135,12 @@ footer { position: absolute; bottom: 0; width: 100%; height: 2.0rem; margin-bott
  * footer
  */
 .footer-socials-wrapper { text-align: right; }
+.social-media-list { padding-left: 0px; }
 .social-media-list li { font-family: $footer-font-family; display: inline; }
 .social-media-list li a { text-decoration: none; }
 .social-media-list-first::before { content: "" !important; padding-inline: 0px; }
 .social-media-list li::before { content: "|"; padding-inline: 5px; }
+@include media-query($on-laptop) { .social-media-list li { font-size: $mobile-font-size; } }
 
 /**
  * Form
