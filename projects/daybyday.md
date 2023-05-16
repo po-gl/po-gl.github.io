@@ -1,6 +1,6 @@
 ---
 title: DayByDay
-year: 2022
+year: 2023
 layout: project
 source: https://github.com/po-gl/DayByDay
 summary: An iOS daily category tracker and journaling app.
@@ -11,6 +11,7 @@ summary-tags:
  - iOS
 summary-imgs:
  - /assets/screenshots/daybyday/LightMode.png
+ - /assets/screenshots/daybyday/Calendar.png
 tags:
  - SwiftUI
  - iOS
@@ -18,6 +19,9 @@ tags:
  - Animations
 imgs:
  - /assets/screenshots/daybyday/LightMode.png
+ - /assets/screenshots/daybyday/Calendar.png
+ - /assets/screenshots/daybyday/Recent.png
+ - /assets/screenshots/daybyday/RecentDark.png
 ---
 
 The app is intentionally simple in its design -- tracking three categories: *Active*, *Creative*, and *Productive*.
