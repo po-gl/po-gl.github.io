@@ -40,7 +40,7 @@ plugins:
 header_pages:
   - index.md
   - resume.md
-  - publications.md
+  - portfolio.md
   - contact.md
 
 # Exclude from processing.
