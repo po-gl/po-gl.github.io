@@ -24,12 +24,14 @@
         </div>
         {{ content }}
       </main>
+      <object class="dots-stopper" type="image/svg+xml" data="/assets/dots-stopper.svg" draggable="false"></object>
     </div>
+    <object class="drop-stopper" type="image/svg+xml" data="/assets/drop-stopper.svg" draggable="false"></object>
 
     {%- include footer.html -%}
 
-    <img class="colors" src="/assets/small_colors.png">
-    <img class="bg-colors" src="/assets/colors.png">
+    <img class="colors" src="/assets/small_colors.png" draggable="false">
+    <img class="bg-colors" src="/assets/colors.png" draggable="false">
   </div>
 </body>
 
