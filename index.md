@@ -6,7 +6,7 @@ layout: page
 
 I'm a software developer and recent Master's graduate from Idaho State University. I subscribe to the idea of coding as a craft.
 
-I've been an author of four published research [papers]({% link publications.md %}). The research topic has been machine learning models for constrained sequence generation.
+I've been an author of four published research [papers]({% link publications.md %}) on the topic of machine learning models for constrained sequence generation.
 
 Lately, I've been working on personal web and iOS/macOS/watchOS apps. Including a mind map generating GPT-4 web app, a timer/tasks app that facilitates Francesco Cirillo's Pomodoro technique, a daily tracker/journaling app, and a ChatGPT dialog app — displayed in a [portfolio]({% link /assets/Portfolio_of_Apps-Porter_Glines.pdf %}) and hosted on [GitHub](https://github.com/{{ site.github_username | escape }}) .
 
