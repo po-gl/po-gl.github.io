@@ -14,4 +14,4 @@ When I'm not in front of a computer, I'm in the mountains snowboarding, mountain
 
 <br>
 
-You can find more details in my [resume]({% link /assets/Resume_Porter_Glines.pdf %}) or you can [contact]({% link contact.md %}) me for any questions.
+You can find more details in my [resume]({% link /assets/Resume_Porter_Glines.pdf %}) and feel free to [contact]({% link contact.md %}) me for any questions.
