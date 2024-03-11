@@ -1,5 +1,5 @@
 ---
-title: CHiMP
+title: CHiMP (Thesis)
 year: 2021
 layout: project
 source: https://github.com/po-gl/ConstrainedHiddenMarkovModel
@@ -12,7 +12,11 @@ summary-img: /assets/screenshots/chimp/Nodes.png
 tags:
  - Machine Learning
  - Constrained Model
+ - Sequence Generation
+ - Constraint Satisfaction Problem
+ - Hidden Markov Model
  - Rust
+ - Thesis
 ---
 
 CHiMP is an acronym for a **C**onstrained **Hi**dden **M**arkov **P**rocess.
