@@ -30,7 +30,7 @@ imgs:
 
 ---
 
-PomoBerry is a focus timer app that facilitates the Pomodoro technique. The technique was developed and expanded upon in the 80s and 90s by Francesco Cirillo to enhance focus, increase decision awareness, boost motivation, and alleviate mental fatigue and anxiety, among other goals. The method is simple:
+`PomoBerry` is a focus timer app that facilitates the Pomodoro technique. The technique was developed and expanded upon in the 80s and 90s by Francesco Cirillo to enhance focus, increase decision awareness, boost motivation, and alleviate mental fatigue and anxiety, among other goals. The method is simple:
 
 * Work for 25 minutes.
 * Rest for 5 minutes.
