@@ -8,6 +8,8 @@ summary-tags:
  - SwiftUI
  - GPT-4
  - Core Data
+ - iOS
+ - macOS
 summary-imgs:
  - /assets/screenshots/dialog/DarkMode.png
  - /assets/screenshots/dialog/macOS.png
@@ -15,6 +17,8 @@ tags:
  - SwiftUI
  - GPT-4
  - Core Data
+ - iOS
+ - macOS
 imgs:
  - /assets/screenshots/dialog/DarkMode.png
  - /assets/screenshots/dialog/macOS.png

@@ -8,6 +8,7 @@ summary-tags:
  - Machine Learning
  - Rust
  - Constrained Model
+ - Sequence Generation
 summary-img: /assets/screenshots/chimp/Nodes.png
 tags:
  - Machine Learning

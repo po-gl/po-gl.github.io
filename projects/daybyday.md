@@ -8,10 +8,12 @@ summary-tags:
  - SwiftUI
  - Animations
  - Core Data
+ - iOS
 summary-imgs:
  - /assets/screenshots/daybyday/LightMode.png
 tags:
  - SwiftUI
+ - iOS
  - Core Data
  - Animations
 imgs:

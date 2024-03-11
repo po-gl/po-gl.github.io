@@ -8,12 +8,16 @@ summary-tags:
   - SwiftUI
   - Core Data
   - Rust
+  - iOS
+  - watchOS
 summary-imgs:
   - /assets/screenshots/pomodoro/DarkMode.png
   - /assets/screenshots/pomodoro/EstimationsChart.png
 tags:
   - SwiftUI
   - Core Data
+  - iOS
+  - watchOS
   - CloudKit
   - SwiftUI Charts
   - UIKit (supplemental)
