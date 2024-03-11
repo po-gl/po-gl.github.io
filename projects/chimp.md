@@ -14,16 +14,18 @@ tags:
  - Machine Learning
  - Constrained Model
  - Rust
-imgs:
- - /assets/screenshots/chimp/LeibenGott.png
- - /assets/screenshots/chimp/Nodes.png
 ---
 
 CHiMP is an acronym for a **C**onstrained **Hi**dden **M**arkov **P**rocess.
 
 This novel model was implemented as part of my [Master's thesis](https://porterglines.com/assets/Glines_Porter_MS.pdf) to generate musical sequences
-styled after Bach chorales (also see [https://github.com/po-gl/BachPipeline](https://github.com/po-gl/BachPipeline)). For example, the sequence below is constrained to be the beginning and end of the first five measures of Bach's *"Wer nur den lieben Gott läßt walten"*. Constraints are colored green. Further below is a visual representation of a trained constrained hidden Markov model.
+styled after Bach chorales (also see [https://github.com/po-gl/BachPipeline](https://github.com/po-gl/BachPipeline)). For example, the sequence below is constrained to be the beginning and end of the first five measures of Bach's *"Wer nur den lieben Gott läßt walten"*. Constraints are colored green.
 
-The constrained hidden Markov processes is an extension of work done by Pachet et al. in their paper, *"Finite-Length Markov Processes with Constraints."* The model generates sequences and can apply user-defined constraints to the sequences. Sequences can be generated in any number of domains, such as natural language or music generation.
+<img alt="Generated Bach chorale" src="/assets/screenshots/chimp/LeibenGott.png">
+
+The constrained hidden Markov processes is an extension of work done by Pachet et al. in their paper, *"Finite-Length Markov Processes with Constraints."* The model generates sequences and can apply user-defined constraints to the sequences. Sequences can be generated in any number of domains, such as natural language or music generation. Below is a visual representation of a trained constrained hidden Markov model.
+
+<img alt="trained model for toy example" src="/assets/screenshots/chimp/Nodes.png">
+
 
 
