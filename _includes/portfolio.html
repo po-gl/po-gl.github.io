@@ -44,6 +44,11 @@
             {%- include icon-github.svg -%}
             github
           </a>
+          {%- if project_page.testflight -%}
+            <a class="project-source-link" href="{{ project_page.testflight }}">
+              testflight
+            </a>
+          {%- endif -%}
         </div>
         <!-- all tags -->
         <div class="tags">
