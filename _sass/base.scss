@@ -179,6 +179,7 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
 
 .summary-images { display: flex; justify-content: space-evenly; filter: saturate(70%); }
 .summary-images img { height: 200px; }
+@include media-query($on-palm) { .summary-images img { height: auto; width: 30vw; } }
 
 .project-card h2 { font-family: $header-font-family; font-size: $header-font-size; margin-top: 0.2em; }
 .project-card p { color: var(--secondary-text-color); margin: 0; }
@@ -206,6 +207,8 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
 
 .images { display: flex; justify-content: space-evenly; flex-wrap: wrap; column-gap: 20px; }
 .images img { max-height: 500px; }
+@include media-query($on-palm) { .images .img { max-width: 100%; } }
+
 
 /**
  * footer
