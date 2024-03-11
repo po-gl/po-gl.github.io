@@ -8,8 +8,7 @@ summary-tags:
  - Machine Learning
  - Rust
  - Constrained Model
-summary-imgs:
- - /assets/screenshots/chimp/Nodes.png
+summary-img: /assets/screenshots/chimp/Nodes.png
 tags:
  - Machine Learning
  - Constrained Model

@@ -9,9 +9,15 @@
       <a class="project-card" href="#{{ project_page.title }}">
         <div class="summary-images">
           {%- for img in project_page.summary-imgs -%}
-          <img fetchpriority="high" alt="project screenshot" src="{{ img }}">
-            {%- endfor -%}
+            <img fetchpriority="high" alt="project screenshot" src="{{ img }}">
+          {%- endfor -%}
         </div>
+        <!-- optional single image -->
+        {%- if project_page.summary-img -%}
+          <div class="summary-image">
+            <img fetchpriority="high" alt="project screenshot" src="{{ project_page.summary-img }}">
+          </div>
+        {%- endif -%}
         <h2>{{ project_page.title }}</h2>
         <div class="tags">
           {%- for tag in project_page.summary-tags -%}
