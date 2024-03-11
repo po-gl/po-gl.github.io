@@ -5,16 +5,23 @@
   src: url('Gallient.woff');
 }
 
+@font-face {
+  font-family: 'Delonizer';
+  src: url('DELONIZER.otf');
+}
+
 /**
  * Style variables
  */
-$base-font-family:     'Didot', !default;
-$title-font-family:    'Gallient', 'Baskerville', !default;
-$header-font-family:   'Andale mono', !default;
-$footer-font-family:   'Andale mono', !default;
+$base-font-family:        'Didot', !default;
+$title-font-family:       'Gallient', 'Baskerville', !default;
+$header-mono-font-family: 'Andale mono', !default;
+$header-font-family:      'Delonizer', 'Baskerville', !default;
+$footer-font-family:      'Andale mono', !default;
 
 $base-font-size:       18px !default;
-$header-font-size:     16px !default;
+$header-mono-font-size:16px !default;
+$header-font-size:     28px !default;
 $mobile-font-size:     16px !default;
 $title-h1-font-size:   8vw !default;
 $title-h2-font-size:   5.5vw !default;
@@ -47,7 +54,8 @@ $on-laptop:        800px !default;
  */
 body { overflow-x: hidden; background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
-p, ul, ol { margin: 0px;  color: var(--text-color); }
+p, ul, ol { margin: 0px;  color: var(--text-color); margin-bottom: 20px; }
+hr { border-color: var(--secondary-text-color); margin: 20px; }
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); border-radius: 3px; transition: all 100ms ease-in;}
 a:active { transition: all 0ms;}
@@ -65,13 +73,12 @@ h6:before { content: "######";  margin-right: 9px; }*/
 .container { width: $container-width;  max-width: $container-max-width; margin-right: auto;  margin-left: auto; position: relative; min-height: 97vh; }
 .content-wrapper { position: relative; border-radius: 30px 0px; border-left: var(--border);  border-top: var(--border); }
 .dots-stopper { position: absolute; top: -2px; right: -20px; height: 2px; user-select: none; }
-@include media-query($on-laptop) { .footer-spacer { height: 6.0rem; } }
-p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; margin-bottom: 20px; }
+.footer-spacer { height: 6.0rem; }
+p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; }
 footer { color: var(--text-color);  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
 header { padding-top: 15px; }
 header p { text-align: left;  margin: 0; }
-footer { position: fixed; bottom: 0; right: 4em; height: 2.0rem; margin-bottom: 3.0rem; margin-top: 1.0rem }
-@include media-query($on-laptop) { footer { position: absolute; bottom: 0; right: auto; width: 100%; } }
+footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem; margin-bottom: 3.0rem; margin-top: 1.0rem }
 
 /**
  * Highlight/Markup
@@ -105,7 +112,7 @@ footer { position: fixed; bottom: 0; right: 4em; height: 2.0rem; margin-bottom: 
 @include media-query($on-laptop) { .menu-image img { width: 18px; height: 18px; left: -10px; top: 8px; }}
 
 .menu ul { margin-top: 0px;  margin-bottom: 3px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
-.menu ul li { font-size: $header-font-size; font-family: $header-font-family; display: inline;  margin-left: 35px; }
+.menu ul li { font-size: $header-mono-font-size; font-family: $header-mono-font-family; display: inline;  margin-left: 35px; }
 @include media-query($on-palm) { .menu ul li { margin-left: 15px;}}
 .menu ul li a { text-decoration: none;  color: var(--text-color); padding-inline: 8px; padding-top: 1px; padding-bottom: 1px; border-radius: 10px; }
 
@@ -137,10 +144,64 @@ footer { position: fixed; bottom: 0; right: 4em; height: 2.0rem; margin-bottom: 
 .colors { width: 30vw; height: calc(30vw*0.66); position: absolute; right: -7vw; top: 25vh; z-index: -1;}
 @include media-query($on-laptop) { .colors { width: 16rem; height: calc(16rem*0.66); position: absolute; right: calc(-16rem/14); top: calc(16rem/4); }}
 
-.mobile-socials { display: none; }
+.mobile-socials { display: inherit; position: absolute; right: 0; top: calc(20vh + 30vw*0.66); }
 @include media-query($on-laptop) { .mobile-socials { display: inherit; text-align: right; margin-bottom: 4rem; }}
+@include media-query($on-laptop) { .mobile-socials { position: inherit; right: auto; top: auto; }}
 
 .drop-stopper { height: 50px; transform: translate(0, -45px); user-select: none; }
+
+/**
+ * projects
+ */
+#portfolio h2 { display: flex; justify-content: start; transform: translateY(-20px); margin-inline-start: 50px; color: var(--secondary-text-color); text-decoration: none; font-family: $header-mono-font-family; font-size: 36px; opacity: 0.7; }
+#portfolio { text-decoration: none; }
+@include media-query($on-laptop) { #portfolio h2 { font-size: 36px } }
+@include media-query($on-palm) { #portfolio h2 { font-size: 30px; margin-inline-start: 30px; } }
+
+.projects { display: grid; width: 82vw; margin-bottom: 30px; grid-template-columns: repeat(auto-fill, 300px); gap: 3.0em; justify-content: space-evenly; }
+@include media-query($on-palm) { .projects { width: auto; grid-template-columns: repeat(auto-fill, 100%); justify-content: center; } }
+
+.project-card-wrapper { position: relative; min-width: 200px; max-width: 300px; }
+@include media-query($on-palm) { .project-card-wrapper { max-width: 100%; margin-inline-start: 25px; margin-inline-end: calc(25px + 1em); } }
+.project-source-link { transform: rotate(90deg); }
+.project-source-link { position: absolute; top: 4em; right: -4.4em; display: flex; align-items: center; gap: 0.5em; padding-inline: 7px; border-radius: 4px; background-color: var(--secondary-text-color); }
+.project-source-link { text-decoration: none; font-size: 14px; font-family: $footer-font-family; color: var(--background-color); }
+.project-source-link svg { transform: rotate(-90deg); }
+.project-source-link svg path { fill: var(--background-color); }
+
+.project-card { display: block; padding: 12px; border-radius: 20px; border: var(--border); background-color: rgba(0, 0, 0, 0.05); }
+.project-card { transition: all 200ms ease-in-out; }
+.project-card:hover { border-color: var(--bright-orange); background-color: rgba(0, 0, 0, 0.07); border-radius: 20px; }
+.project-card { text-decoration: none; }
+
+.summary-images { display: flex; justify-content: space-evenly; filter: saturate(70%); }
+.summary-images img { height: 200px; }
+
+.project-card h2 { font-family: $header-font-family; font-size: $header-font-size; margin-top: 0.2em; }
+.project-card p { color: var(--secondary-text-color); margin: 0; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1em; }
+.tag { font-family: $footer-font-family; font-size: 14px; color: var(--secondary-text-color); padding-inline: 7px; background-color: rgba(0, 0, 0, 0.1); border-radius: 50px; }
+
+/**
+ * project modal content
+ */
+.modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5) }
+.modal-content { position: relative; background-color: var(--background-color); margin: 12% auto; width: 80%; max-width: 1100px; padding: 20px; border: var(--border); border-radius: 20px; }
+
+.page-content { padding-inline: 20px; }
+
+.close { font-family: $footer-font-family; font-size: 35px; text-decoration: none; position: absolute; top: 0; right: 16px; color: var(--base-color);  }
+.close:hover, .close:focus { color: var(--bright-orange); background-color: transparent; cursor: pointer; }
+
+:target { display: block; }
+
+.modal-content h1 { font-family: $header-font-family; font-size: 32px; margin-top: 0; margin-bottom: 0.6em; }
+.modal-content .tags { max-width: 50%; }
+@include media-query($on-laptop) { .modal-content .tags { max-width: 100%; } }
+
+.images { display: flex; justify-content: space-evenly; flex-wrap: wrap; column-gap: 20px; }
+.images img { max-height: 500px; }
 
 /**
  * footer

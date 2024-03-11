@@ -34,14 +34,20 @@ linkedin_username: porter-glines
 # remote_theme: b2a3e8/jekyll-theme-console
 style: light
 plugins:
-  - jekyll-feed
+  - jekyll-redirect-from
+  # - jekyll-feed
 
-# Console theme settings
 header_pages:
   - index.md
-  - resume.md
   - portfolio.md
+  - resume.md
   - contact.md
+
+projects:
+  - projects/pomodoro.md
+  - projects/chimp.md
+  - projects/dialog.md
+  - projects/daybyday.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

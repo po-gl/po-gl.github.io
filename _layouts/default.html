@@ -11,25 +11,9 @@
 
 <body>
   <div class="container">
-
     {%- include header.html -%}
-    <div class="content-wrapper">
-      <main class="content">
-        <div class="content-title">
-          <h2>Hello, I'm</h2>
-          <h1>{{ site.title }}.</h1>
-        </div>
-        <div class="mobile-socials">
-          {%- include social.html -%}
-        </div>
-        {{ content }}
-      </main>
-      <object class="dots-stopper" type="image/svg+xml" data="/assets/dots-stopper.svg" draggable="false"></object>
-    </div>
-    <object class="drop-stopper" type="image/svg+xml" data="/assets/drop-stopper.svg" draggable="false"></object>
-
+    {{ content }}
     {%- include footer.html -%}
-
     <img class="colors" src="/assets/small_colors.png" draggable="false">
   </div>
 </body>

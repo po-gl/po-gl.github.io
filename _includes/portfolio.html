@@ -1,0 +1,53 @@
+
+
+<a href="#portfolio" id="portfolio"><h2>Portfolio</h2></a>
+
+<div class="projects">
+  {%- for project in site.projects  -%}
+    {%- assign project_page = site.pages | where: "path", project | first -%}
+    <div class="project-card-wrapper">
+      <a class="project-card" href="#{{ project_page.title }}">
+        <div class="summary-images">
+          {%- for img in project_page.summary-imgs -%}
+          <img fetchpriority="high" alt="project screenshot" src="{{ img }}">
+            {%- endfor -%}
+        </div>
+        <h2>{{ project_page.title }}</h2>
+        <div class="tags">
+          {%- for tag in project_page.summary-tags -%}
+            <div class="tag">{{ tag }}</div>
+          {%- endfor -%}
+        </div>
+        <p>{{ project_page.summary }}</p>
+      </a>
+      <a class="project-source-link" href="{{ project_page.source }}">
+        {%- include icon-github.svg -%}
+        github
+      </a>
+    </div>
+
+    <div id="{{ project_page.title }}" class="modal">
+      <div class="modal-content">
+        <a href="#Portfolio" class="close" title="Close">&times</a>
+        <!-- title + source link -->
+        <h1>{{ project_page.title }}</h1>
+        <!-- all tags -->
+        <div class="tags">
+          {% for tag in project_page.tags %}
+            <div class="tag">{{ tag }}</div>
+          {% endfor %}
+        </div>
+        <div class="page-content">
+          {{ project_page.content | markdownify }}
+        </div>
+        <!-- main screenshots -->
+        <div class="images">
+          {%- for img in project_page.imgs -%}
+            <img fetchpriority="low" alt="project screenshot" src="{{ img }}">
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  {%- endfor -%}
+</div>
+
