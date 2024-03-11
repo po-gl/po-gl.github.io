@@ -18,7 +18,7 @@
             <div class="tag">{{ tag }}</div>
           {%- endfor -%}
         </div>
-        <p>{{ project_page.summary }}</p>
+        <p>{{ project_page.summary | markdownify }}</p>
       </a>
       <a class="project-source-link" href="{{ project_page.source }}">
         {%- include icon-github.svg -%}
