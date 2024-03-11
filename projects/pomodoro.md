@@ -9,8 +9,8 @@ summary-tags:
   - Core Data
   - Rust
 summary-imgs:
-  - /assets/screenshots/pomodoro-DarkMode.png
-  - /assets/screenshots/pomodoro-EstimationsChart.png
+  - /assets/screenshots/pomodoro/DarkMode.png
+  - /assets/screenshots/pomodoro/EstimationsChart.png
 tags:
   - SwiftUI
   - Core Data
@@ -20,13 +20,13 @@ tags:
   - Rust
   - Tokio concurrency
 imgs:
-  - /assets/screenshots/pomodoro-DarkMode.png
-  - /assets/screenshots/pomodoro-TaskList.png
-  - /assets/screenshots/pomodoro-EstimationsChart.png
-  - /assets/screenshots/pomodoro-CumulativeTimesChart.png
-  - /assets/screenshots/pomodoro-LiveActivitiesAndWidgetsCondensed.png
-  - /assets/screenshots/pomodoro-Settings.png
-  - /assets/screenshots/pomodoro-LightMode.png
+  - /assets/screenshots/pomodoro/DarkMode.png
+  - /assets/screenshots/pomodoro/TaskList.png
+  - /assets/screenshots/pomodoro/EstimationsChart.png
+  - /assets/screenshots/pomodoro/CumulativeTimesChart.png
+  - /assets/screenshots/pomodoro/LiveActivitiesAndWidgetsCondensed.png
+  - /assets/screenshots/pomodoro/Settings.png
+  - /assets/screenshots/pomodoro/LightMode.png
 
 ---
 
