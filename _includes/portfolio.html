@@ -24,12 +24,14 @@
         {%- include icon-github.svg -%}
         github
       </a>
+      <div class="project-year">{{ project_page.year }}</div>
     </div>
 
     <div id="{{ project_page.title }}" class="modal">
       <div class="modal-content">
         <a href="#Portfolio" class="close" title="Close">&times</a>
         <!-- title + source link -->
+        <div class="year">{{ project_page.year }}</div>
         <h1>{{ project_page.title }}</h1>
         <!-- all tags -->
         <div class="tags">

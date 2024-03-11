@@ -1,5 +1,6 @@
 ---
 title: Pomodoro (PomoBerry)
+year: 2023
 layout: project
 source: https://github.com/po-gl/Pomodoro
 summary: An iOS and watchOS focus timer app with task management, charts, and a Rust backend.
