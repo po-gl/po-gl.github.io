@@ -163,13 +163,16 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
 
 .project-card-wrapper { position: relative; min-width: 200px; max-width: 300px; }
 @include media-query($on-palm) { .project-card-wrapper { max-width: 100%; margin-inline-start: 5px; margin-inline-end: calc(10px + 1em); } }
-.project-source-link { transform: rotate(90deg); }
-.project-source-link { position: absolute; top: 4em; right: -4.4em; display: flex; align-items: center; gap: 0.5em; padding-inline: 7px; border-radius: 4px; background-color: var(--secondary-text-color); }
+
+.project-source-link { display: flex; align-items: center; gap: 0.5em; padding-inline: 7px; border-radius: 4px; background-color: var(--secondary-text-color); }
 .project-source-link { text-decoration: none; font-size: 14px; font-family: $footer-font-family; color: var(--background-color); }
-.project-source-link svg { transform: rotate(-90deg); }
 .project-source-link svg path { fill: var(--background-color); }
 
-.project-year { font-family: $footer-font-family; font-size: $footer-font-family; color: var(--secondary-text-color); }
+.project-card-wrapper .project-source-link { transform: rotate(90deg); }
+.project-card-wrapper .project-source-link { position: absolute; top: 4em; right: -4.4em;  }
+.project-card-wrapper .project-source-link svg { transform: rotate(-90deg); }
+
+.project-year { font-family: $footer-font-family; color: var(--secondary-text-color); }
 .project-year { position: absolute; top: -1.3em; right: 1em; }
 
 .project-card { display: block; padding: 12px; border-radius: 20px; border: var(--border); background-color: rgba(0, 0, 0, 0.05); }
@@ -204,8 +207,12 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
 
 :target { display: block; }
 
-.modal-content h1 { font-family: $header-font-family; font-size: 32px; margin-top: 0; margin-bottom: 0.4em; }
+.modal-content h1 { font-family: $header-font-family; font-size: 32px; margin-top: 0; margin-bottom: 0; }
+.title-and-link { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0px 30px; margin-bottom: 15px; }
+.title-and-link .project-source-link { position: relative; height: fit-content; padding-block: 2px; opacity: 0.7; border-radius: 8px; font-size: 14px; }
+
 .modal-content .year { font-family: $footer-font-family; font-size: $footer-font-family; color: var(--secondary-text-color); margin-bottom: 0.5em; }
+
 .modal-content .tags { max-width: 50%; }
 @include media-query($on-laptop) { .modal-content .tags { max-width: 100%; } }
 
