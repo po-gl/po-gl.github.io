@@ -50,6 +50,7 @@ projects:
   - projects/dialog.md
   - projects/daybyday.md
   - projects/comp.md
+  - projects/raytracer.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
