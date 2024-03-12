@@ -46,6 +46,7 @@ header_pages:
 projects:
   - projects/pomodoro.md
   - projects/chimp.md
+  - projects/thoughts.md
   - projects/dialog.md
   - projects/daybyday.md
   - projects/comp.md
