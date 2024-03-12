@@ -36,6 +36,8 @@ imgs:
   - /assets/screenshots/pomodoro/LiveActivitiesAndWidgetsCondensed.png
   - /assets/screenshots/pomodoro/Settings.png
   - /assets/screenshots/pomodoro/LightMode.png
+  - /assets/screenshots/pomodoro/WatchMainPage.png
+  - /assets/screenshots/pomodoro/WatchMainPageRest.png
 
 ---
 
