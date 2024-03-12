@@ -10,19 +10,24 @@
   src: url('DELONIZER.otf');
 }
 
+@font-face {
+    font-family: 'Lora';
+    src: url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+}
+
 /**
  * Style variables
  */
-$base-font-family:        'Didot', !default;
-$title-font-family:       'Gallient', 'Baskerville', !default;
-$header-mono-font-family: 'Andale mono', !default;
-$header-font-family:      'Delonizer', 'Baskerville', !default;
-$footer-font-family:      'Andale mono', !default;
+$base-font-family:        'Lora', serif;
+$title-font-family:       'Gallient', 'Baskerville', serif;
+$header-mono-font-family: 'Andale mono', 'Monaco', mono;
+$header-font-family:      'Delonizer', 'Baskerville', serif;
+$footer-font-family:      'Andale mono', 'Monaco', mono;
 
 $base-font-size:       18px !default;
 $header-mono-font-size:16px !default;
 $header-font-size:     28px !default;
-$mobile-font-size:     16px !default;
+$mobile-font-size:     18px !default;
 $title-h1-font-size:   8vw !default;
 $title-h2-font-size:   5.5vw !default;
 $palm-title-h1-font-size: 32px !default;
