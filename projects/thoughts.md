@@ -3,6 +3,7 @@ title: Thoughts
 year: 2023
 layout: project
 source: https://github.com/po-gl/Thoughts
+tryit: https://thoughts.porterglines.com
 summary: A mind map-generating web app (MERN stack) that utilizes LLMs.
 summary-tags:
  - React

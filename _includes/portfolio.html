@@ -49,6 +49,11 @@
               testflight
             </a>
           {%- endif -%}
+          {%- if project_page.tryit -%}
+            <a class="project-source-link" href="{{ project_page.tryit }}">
+              try it
+            </a>
+          {%- endif -%}
         </div>
         <!-- all tags -->
         <div class="tags">
