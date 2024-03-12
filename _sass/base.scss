@@ -32,6 +32,7 @@ $title-h1-font-size:   8vw !default;
 $title-h2-font-size:   5.5vw !default;
 $palm-title-h1-font-size: 32px !default;
 $palm-title-h2-font-size: 26px !default;
+$palm-footer-font-size: 16px !default;
 
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
@@ -235,7 +236,7 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
 .social-media-list li a { text-decoration: none; }
 .social-media-list-first::before { content: "" !important; padding-inline: 0px; }
 .social-media-list li::before { content: "|"; padding-inline: 5px; }
-@include media-query($on-laptop) { .social-media-list li { font-size: $mobile-font-size; } }
+@include media-query($on-laptop) { .social-media-list li { font-size: $palm-footer-font-size; } }
 
 /**
  * Form
