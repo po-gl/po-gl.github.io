@@ -91,6 +91,7 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
  */
 ::selection { background: var(--selection-background);  color: var(--selection-text); }
 ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
+img::selection { background: transparent; }
 
 /**
  * Background
