@@ -26,12 +26,12 @@ imgs:
 
 ---
 
-`Dialogue` is a macOS and iOS app that connects to OpenAI's ChatGPT API (`gpt-4.0-turbo`).
+`Dialogue` is a macOS and iOS app that connects to OpenAI's ChatGPT API (`gpt-4-turbo`).
 
-Its UI is a simple and familiar chat interface, but its conversation abilities are surprisingly natural (like any other project using the GPT-3.5 model). Ask it general queries, coding questions, or to create poetry. The task-agnostic model will typically give a convincing response in well crafted prose, even when wrong. As with other LLM's, do not rely on ChatGPT as a source of trustworthy information. See OpenAI's [website](https://openai.com/blog/chatgpt) for more information on ChatGPT or their [paper](https://arxiv.org/pdf/2005.14165.pdf) on GPT-3 or this [paper](https://arxiv.org/abs/1706.03762) on the underlying Transformer model.
+Its UI is a simple and familiar chat interface, but its conversation abilities are surprisingly natural (like any other project using LLMs). Ask it general queries, coding questions, or to create poetry. The task-agnostic model will typically give a convincing response in well crafted prose, even when wrong. As with other LLMs, do not rely on ChatGPT as a source of trustworthy information. See OpenAI's [website](https://openai.com/blog/chatgpt) for more information on ChatGPT or their [paper](https://arxiv.org/pdf/2005.14165.pdf) on GPT-3 or this [paper](https://arxiv.org/abs/1706.03762) on the underlying Transformer model.
 
 Features:
-- Chat interface connecting to OpenAI's ChatGPT api (`gpt-4.0-turbo`)
+- Chat interface connecting to OpenAI's ChatGPT api (`gpt-4-turbo`)
 - Keep track of multiple threads
 - Automatic thread summary subtitle using ChatGPT
 - Markdown rendering of messages (lists, tables, code syntax, etc.)
