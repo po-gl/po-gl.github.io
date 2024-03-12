@@ -57,7 +57,7 @@ $on-laptop:        800px !default;
 /**
  * Global
  */
-body { overflow-x: hidden; background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
+body { overflow-x: hidden; max-width: 100%; background-color: var(--background-color); margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); margin-bottom: 20px; }
 hr { border-color: var(--secondary-text-color); margin: 20px; }
@@ -76,7 +76,7 @@ h6:before { content: "######";  margin-right: 9px; }*/
  * Layout
  */
 .container { width: $container-width;  max-width: $container-max-width; margin-right: auto;  margin-left: auto; position: relative; min-height: 97vh; }
-.content-wrapper { position: relative; border-radius: 30px 0px; border-left: var(--border);  border-top: var(--border); }
+.content-wrapper { position: relative; border-radius: 30px 0px; border-left: var(--border);  border-top: var(--border); margin-inline-end: 5px; }
 .dots-stopper { position: absolute; top: -2px; right: -20px; height: 2px; user-select: none; }
 .footer-spacer { height: 6.0rem; }
 p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; }
@@ -112,9 +112,9 @@ footer { position: absolute; bottom: 0; right: auto; width: 100%; height: 2.0rem
  */
 .menu { position: relative; text-align: right; }
 
-.menu-image img { width: 20px; height: 20px; padding: 10px; position: absolute; left: -35px; top: 5px; cursor: pointer; }
+.menu-image img { width: 20px; height: 20px; padding: 10px; position: absolute; left: -40px; top: 5px; cursor: pointer; }
 .menu-image img::selection { background: rgba(0, 0, 0, 0.1) }
-@include media-query($on-laptop) { .menu-image img { width: 18px; height: 18px; left: -10px; top: 8px; }}
+@include media-query($on-laptop) { .menu-image img { width: 18px; height: 18px; left: -15px; top: 8px; }}
 
 .menu ul { margin-top: 0px;  margin-bottom: 3px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
 .menu ul li { font-size: $header-mono-font-size; font-family: $header-mono-font-family; display: inline;  margin-left: 35px; }
