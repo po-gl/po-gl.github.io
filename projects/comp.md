@@ -30,3 +30,4 @@ This model was built while I was an undergrad to supplement a paper in the conte
 
 The project uses the C++14 standard and has a thread pool architecture to serve mnemonic device generation data to a separate web server process over IPC.
 
+---
