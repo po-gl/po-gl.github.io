@@ -189,7 +189,7 @@ img::selection { background: transparent; }
 .project-card { text-decoration: none; }
 
 .summary-images, .summary-image { display: flex; justify-content: space-evenly; filter: saturate(90%); }
-.summary-images img, .summary-image img { display: block; width: auto; height: auto; max-height: 200px; }
+.summary-images img, .summary-image img { display: block; width: auto; height: auto; max-height: 200px; border-radius: 10px; }
 @include media-query($on-palm) { .summary-images img { max-width: 30vw; max-height: 100vw; object-fit: contain; } }
 @include media-query($on-palm) { .summary-image img { max-width: 60vw; } }
 
