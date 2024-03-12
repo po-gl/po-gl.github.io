@@ -48,6 +48,7 @@ projects:
   - projects/chimp.md
   - projects/dialog.md
   - projects/daybyday.md
+  - projects/comp.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
