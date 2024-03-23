@@ -3,7 +3,7 @@ title: CHiMP (Thesis)
 year: 2021
 layout: project
 source: https://github.com/po-gl/ConstrainedHiddenMarkovModel
-summary: A constrained hidden Markov process written in Rust -- a novel model which is the basis of my master's thesis.
+summary: A constrained hidden Markov process written in Rust -- a novel model which is the basis of my master's thesis
 summary-tags:
  - Machine Learning
  - Rust

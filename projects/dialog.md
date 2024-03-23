@@ -3,7 +3,7 @@ title: Dialogue
 year: 2022
 layout: project
 source: https://github.com/po-gl/Dialogue
-summary: A macOS and iOS app chat dialogue app with GPT-4 with markdown rendering.
+summary: A macOS and iOS app chat dialogue app with GPT-4 with markdown rendering
 summary-tags:
  - SwiftUI
  - GPT-4

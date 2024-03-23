@@ -3,7 +3,7 @@ title: DayByDay
 year: 2023
 layout: project
 source: https://github.com/po-gl/DayByDay
-summary: An iOS daily category tracker and journaling app.
+summary: An iOS daily category tracker and journaling app
 summary-tags:
  - SwiftUI
  - Animations

@@ -3,7 +3,7 @@ title: Raytracer
 year: 2019
 layout: project
 source: https://github.com/po-gl/Raytracer
-summary: A multi-threaded raytracer written in Rust.
+summary: A multi-threaded raytracer written in Rust
 summary-tags:
  - Graphics
  - Rust
