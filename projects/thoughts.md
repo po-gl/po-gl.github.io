@@ -4,7 +4,7 @@ year: 2023
 layout: project
 source: https://github.com/po-gl/Thoughts
 tryit: https://thoughts.porterglines.com
-summary: A mind map-generating web app (MERN stack) that utilizes LLMs.
+summary: A mind map-generating web app that utilizes LLMs, primarily made to learn the MERN stack and better familiarize myself with web development
 summary-tags:
  - React
  - NodeJS
