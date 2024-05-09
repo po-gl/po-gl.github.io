@@ -150,6 +150,12 @@ img::selection { background: transparent; }
 @include media-query($on-laptop) { .content-title h1 { font-size: $palm-title-h1-font-size; margin-bottom: 1.2rem; } }
 
 .colors { width: 30vw; height: calc(30vw*0.66); position: absolute; right: -7vw; top: 25vh; z-index: -1;}
+.colors { filter: blur(3px); animation: unblur 0.5s; animation-delay: 1s; animation-fill-mode: forwards; animation-timing-function: ease-in; }
+@keyframes unblur {
+    100% {
+        filter: blur(0px)
+    }
+}
 @include media-query($on-laptop) { .colors { width: 16rem; height: calc(16rem*0.66); position: absolute; right: calc(-16rem/14); top: calc(16rem/4); }}
 
 .mobile-socials { display: inherit; position: absolute; right: 0; top: calc(20vh + 30vw*0.66); }
